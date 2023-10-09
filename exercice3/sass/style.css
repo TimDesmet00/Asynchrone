@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+body {
+  background-color: rgb(49, 44, 44);
+  color: antiquewhite;
+  text-align: center;
+}
+body main section h2 {
+  text-decoration: underline;
+  font-family: "Dancing Script", cursive;
+  font-size: 2em;
+}
+body main section img {
+  width: 50%;
+  border-radius: 25%;
+}
+body main section p {
+  padding: 0 10%;
+  font-size: 1.4em;
+  font-family: "Dancing Script", cursive;
+}
+body main section a {
+  text-decoration: none;
+  color: antiquewhite;
+  transition: 1.2s;
+}
+body main section a:hover {
+  color: lightpink;
+  font-size: 1.5em;
+}
+body main button {
+  margin: 2em 0;
+  border: none;
+  border-radius: 15px;
+  padding: 0.5em 1em;
+  background-color: antiquewhite;
+  color: rgb(49, 44, 44);
+  transition: 1.2s;
+}
+body main button:hover {
+  box-shadow: 0.4em 0.4em 0.4em antiquewhite;
+}
+
+@media only screen and (min-width: 600px) {
+  body main section h2 {
+    font-size: 3em;
+  }
+  body main section p {
+    font-size: 1.8em;
+  }
+  body main section a {
+    font-size: 1.5em;
+  }
+  body main section a:hover {
+    font-size: 2em;
+  }
+  body main button {
+    font-size: 1.2em;
+  }
+}/*# sourceMappingURL=style.css.map */
