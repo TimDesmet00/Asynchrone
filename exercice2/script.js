@@ -1,10 +1,15 @@
 const btn = document.getElementById("btnAutoDestruction");
+const name = document.getElementById("name");
+const pays = document.getElementById("pays");
 
 btn.addEventListener("click", () => {
-  const fetchName = (name) =>
-    fetch("https://api.zippopotam.us/us/33162" + name);
+  const interedName = name.value;
+  const interedPays = pays.value;
 
-  fetchName("keith")
+  const fetchName = (interedName, interedPays) =>
+    fetch(`https://api.agify.io?name=${interedName}&country_id=${interedPays}`);
+
+  fetchName(interedName, interedPays)
     .then((response) => response.json())
     .then((json) => {
       console.log(json.age);
